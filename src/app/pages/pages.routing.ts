@@ -1,3 +1,4 @@
+import { ProgressComponent } from './progress/progress.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { PagesComponent } from './pages.component';
@@ -10,7 +11,7 @@ const routes: Routes = [
     component: PagesComponent,
     children: [
       { path: '', component: DashboardComponent },
-      { path: 'progress', component: ProgressEvent },
+      { path: 'progress', component: ProgressComponent },
       { path: 'grafica1', component: Grafica1Component }
     ],
   }
