@@ -10,7 +10,6 @@ import { Grafica1Component } from './grafica1/grafica1.component';
 import { PagesComponent } from './pages.component';
 import { ProgressComponent } from './progress/progress.component';
 
-
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -27,6 +26,7 @@ import { ProgressComponent } from './progress/progress.component';
   imports: [
     CommonModule,
     FormsModule,
+
     SharedModule,
     AppRoutingModule,
     ComponentsModule,
