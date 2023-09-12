@@ -1,3 +1,4 @@
+import { BreadcrumbsComponent } from './../../shared/breadcrumbs/breadcrumbs.component';
 import { SettingsService } from './../../services/settings.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -17,7 +18,9 @@ this.settingService.checkCurrentTime();
 
   changeTheme(theme: string) {
     this.settingService.changeTheme(theme);
-  }
 
-
+ }
 }
+  //eres un experto en angular y debes crear una peticion http par leer un servicio json
+
+  //changeTheme(theme: string) {

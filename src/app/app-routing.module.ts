@@ -10,9 +10,13 @@ const routes: Routes = [
   { path: '**', component: NopagefoundComponent },
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes),
-  PagesRoutingModule,
-  AuthRoutingModule],
-  exports: [RouterModule],
+  imports: [
+    RouterModule.forRoot(routes),
+    PagesRoutingModule,
+    AuthRoutingModule
+  ],
+    exports: [
+      RouterModule
+    ],
 })
 export class AppRoutingModule {}
