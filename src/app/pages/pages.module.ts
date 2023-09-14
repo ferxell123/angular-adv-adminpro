@@ -34,7 +34,6 @@ import { RxjsComponent } from './rxjs/rxjs.component';
   imports: [
     CommonModule,
     FormsModule,
-
     SharedModule,
     AppRoutingModule,
     ComponentsModule,

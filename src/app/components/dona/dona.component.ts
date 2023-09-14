@@ -11,7 +11,7 @@ export class DonaComponent implements OnInit {
 
   @Input('backgroundColor') backgroundColorDonut: string[] = [];
   @Input('data') dataDonut= [350, 450, 100];
-  @Input('labels') doughnutChartLabels: string[] = ['Download Sales','In-Store Sales', 'xxx'];
+  @Input('labels') doughnutChartLabels: string[] = ['Download Sales','In-Store Sales', 'Mail-Order-Suite'];
   constructor() {}
 
   ngOnInit(): void {
