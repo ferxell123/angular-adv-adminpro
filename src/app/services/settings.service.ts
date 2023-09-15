@@ -6,7 +6,6 @@ import { Injectable } from '@angular/core';
 export class SettingsService {
   private linkTheme = document.querySelector('#theme');
 
-
   constructor() {
     const url =
       localStorage.getItem('theme') || './assets/css/colors/purple-dark.css';
@@ -20,12 +19,11 @@ export class SettingsService {
     this.linkTheme?.setAttribute('href', url);
     localStorage.setItem('theme', url);
     this.checkCurrentTime();
-
   }
 
   checkCurrentTime() {
     const links = document.querySelectorAll('.selector');
-   links.forEach((e) => {
+    links.forEach((e) => {
       e.classList.remove('working');
       const btnTheme = e.getAttribute('data-theme');
       const btnThemeUrl = `./assets/css/colors/${btnTheme}.css`;
@@ -37,6 +35,4 @@ export class SettingsService {
     });
     console.log(links);
   }
-
-
 }

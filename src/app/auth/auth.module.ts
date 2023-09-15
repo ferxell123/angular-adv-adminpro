@@ -19,6 +19,5 @@ import { RegisterComponent } from './register/register.component';
     CommonModule,
     RouterModule,
     FormsModule],
-    //PRUEBA
 })
 export class AuthModule {}
