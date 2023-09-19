@@ -38,7 +38,10 @@ const routes: Routes = [
         component: PromesasComponent,
         data: { titulo: 'Promesas' },
       },
-      { path: 'rxjs', component: RxjsComponent, data: { titulo: 'Rxjs' } },
+      { path: 'rxjs',
+       component: RxjsComponent,
+       data: { titulo: 'Rxjs' }
+        },
     ],
   },
 ];
